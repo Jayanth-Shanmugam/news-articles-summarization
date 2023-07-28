@@ -16,7 +16,7 @@ with col1:
     st.title('REUTERS')
     st.divider()
     if option == 'Crude Oil':
-        df = pd.read_csv('../articles/crude_oil_summary_new.csv')
+        df = pd.read_csv('crude_oil_summary_new.csv')
         for index, series in df.iterrows():
             st.markdown("### [{}]({})".format(series['title'], series['links']))
             st.markdown("*{}*".format(series['published']))
@@ -25,7 +25,7 @@ with col1:
             st.divider()
     
     if option == 'Biofuel':
-        df = pd.read_csv('../articles/biofuel_summary_new.csv')
+        df = pd.read_csv('biofuel_summary_new.csv')
         for index, series in df.iterrows():
             st.markdown("### [{}]({})".format(series['title'], series['links']))
             st.markdown("*{}*".format(series['published']))
