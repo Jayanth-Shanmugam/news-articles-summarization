@@ -32,7 +32,7 @@ with col1:
     if option == 'Biofuel':
         #df = pd.read_csv('biofuel_summary_new.csv')
         df_bio = df[df['keyword']=='biofuel']
-        for index, series in df.iterrows():
+        for index, series in df_bio.iterrows():
             st.markdown("### [{}]({})".format(series['title'], series['link']))
             st.markdown("*{}*".format(series['published']))
             st.markdown('**Keywords:  {}**'.format(series['keywords']))
