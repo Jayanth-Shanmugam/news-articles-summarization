@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="wide")
+
 col1, col2, col3= st.columns([3, 3, 3])
 
 with col2:
